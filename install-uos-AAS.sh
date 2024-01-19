@@ -15,12 +15,12 @@ check_java(){
     fi
 }
 download_inst(){
-    wget --no-check-certificate -O /root/AAS-V10.zip https://ops-iso-and-scripts.oss111b-cn-sx-zjsxzwy01-d01-a.inner.zjsxzwy.cn/AAS-V10.zip
+    wget --no-check-certificate -O /root/AAS-V10.zip https://oss.xxxx.com/AAS-V10.zip
     chmod -R /root/AAS-V10.zip
     unzip /root/AAS-V10.zip
 }
 download_license(){
-    wget --no-check-certificate -O /root/ApusicAS/aas/license.xml https://ops-iso-and-scripts.oss111b-cn-sx-zjsxzwy01-d01-a.inner.zjsxzwy.cn/%E9%87%91%E8%9D%B6255.xml
+    wget --no-check-certificate -O /root/ApusicAS/aas/license.xml https://oss.xxxx.com/xxxxx.xml
 }
 exec(){
     echo "请进入后设置密码audit Sqwe@2023   admin Sasd@2023    secure Szxc@2023"

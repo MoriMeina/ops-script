@@ -137,12 +137,12 @@ disable_selinux(){
     sed -i 's/^SELINUX=.*/SELINUX=disabled/' /etc/selinux/config
 }
 download_installler(){
-    wget -P /home/ --no-check-certificate https://ops-iso-and-scripts.oss111b-cn-sx-zjsxzwy01-d01-a.inner.zjsxzwy.cn/dm1C01091260.key
-    wget --no-check-certificate https://ops-iso-and-scripts.oss111b-cn-sx-zjsxzwy01-d01-a.inner.zjsxzwy.cn/DMInstall.bin
+    wget -P /home/ --no-check-certificate https://oss.xxxx.com/dmxxxx.key
+    wget --no-check-certificate https://oss.xxxx.com/DMInstall.bin
     chmod 777 /root/DMInstall.bin
 }
 install_dbm(){
-    echo "请手动选择安装,参考选项 C,y,/home/dm1C01091260.key,y,21,1,/home/dmdba/dmdbms,y,y"
+    echo "请手动选择安装,参考选项 C,y,/home/dmxxxx.key,y,21,1,/home/dmdba/dmdbms,y,y"
     /root/DMInstall.bin -i console
     wait $!
     chown -R dmdba.dinstall /home/dmdba/*

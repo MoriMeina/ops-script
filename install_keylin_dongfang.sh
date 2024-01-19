@@ -5,7 +5,7 @@ check_java(){
         echo "Java已安装"
     else
         echo "未检测到Java,开始安装"
-        wget --no-check-certificate -O /root/zulu8.74.0.17-ca-jdk8.0.392-linux.x86_64.rpm https://ops-iso-and-scripts.oss111b-cn-sx-zjsxzwy01-d01-a.inner.zjsxzwy.cn/zulu8.74.0.17-ca-jdk8.0.392-linux.x86_64.rpm
+        wget --no-check-certificate -O /root/zulu8.74.0.17-ca-jdk8.0.392-linux.x86_64.rpm https://oss.xxxx.com/zulu8.74.0.17-ca-jdk8.0.392-linux.x86_64.rpm
         rpm -ivh /root/zulu8.74.0.17-ca-jdk8.0.392-linux.x86_64.rpm
         rm -rf /root/zulu8.74.0.17-ca-jdk8.0.392-linux.x86_64.rpm
         if type -p java; then
@@ -16,12 +16,12 @@ check_java(){
     fi
 }
 download_inst(){
-    wget --no-check-certificate -O /root/TongWeb7.0.4.9_M1_Enterprise_Linux.tar.gz https://ops-iso-and-scripts.oss111b-cn-sx-zjsxzwy01-d01-a.inner.zjsxzwy.cn/TongWeb7.0.4.9_M1_Enterprise_Linux.tar.gz
+    wget --no-check-certificate -O /root/TongWeb7.0.4.9_M1_Enterprise_Linux.tar.gz https://oss.xxxx.com/TongWeb7.0.4.9_M1_Enterprise_Linux.tar.gz
     chmod -R /root/TongWeb7.0.4.9_M1_Enterprise_Linux.tar.gz
     tar -xvzf /root/TongWeb7.0.4.9_M1_Enterprise_Linux.tar.gz
 }
 download_license(){
-    wget --no-check-certificate -O /root/TongWeb7.0.4.9_M1_Enterprise_Linux/license.dat https://ops-iso-and-scripts.oss111b-cn-sx-zjsxzwy01-d01-a.inner.zjsxzwy.cn/%E4%B8%9C%E6%96%B9%E9%80%9Alicense%EF%BC%88web%E4%BC%81%E4%B8%9A%E7%89%88%EF%BC%89.dat
+    wget --no-check-certificate -O /root/TongWeb7.0.4.9_M1_Enterprise_Linux/license.dat https://oss.xxxx.com/xxxxx.dat
 }
 exec(){
     bash /root/TongWeb7.0.4.9_M1_Enterprise_Linux/bin/startservernohup.sh
